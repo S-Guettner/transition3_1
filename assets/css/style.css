@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+}
+
+.pink{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    margin-right: 100px;
+    border-radius: 100px;
+    transition:all 2s ease-in;
+}
+.blue{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 100px;
+    margin-top: 25px;
+    transition:all 2s ease-in;
+    transition-delay: 2s;
+}
+
+
+.container:active .pink{
+    transform:translateX(100px);
+}
+.container:active .blue{
+    transform:translateX(200px);
+}
